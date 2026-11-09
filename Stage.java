@@ -7,9 +7,11 @@ public class Stage {
 	private boolean door3isClosed;
 	private int doorWithCar;
 	private Controller control;
+	private int one; 
 	
 	public Stage (int door, Controller c) {
 		control = c;
+
 		door1isClosed = true;
 		control.close (1);
 		door2isClosed = true;
