@@ -15,9 +15,10 @@ public class SimMontyMain {
          myWinTotal = 0;
          int x = 0;
          int a =0;
+         int strategy = 2;
          //you write this...
         while(x< numGames){
-            a += m.playGame();
+            a += m.playGame(strategy);
             x ++;
 
 

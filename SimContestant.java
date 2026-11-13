@@ -18,8 +18,13 @@ public class SimContestant {
     
     //The contestant sticks, switches, or randomly 
     //sticks or switches. You find the percentages
-    public int guess2 (int openedDoor) {
-        
-        return myInitialGuess;
+    public int guess2 (int openedDoor, int strategy) {
+        if(strategy ==1){
+            return myInitialGuess;
+        }else {
+        int c = openedDoor +1;
+        int d = 6- c;
+        return d;
+        }
     }
 }
