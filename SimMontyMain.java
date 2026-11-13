@@ -15,6 +15,7 @@ public class SimMontyMain {
          myWinTotal = 0;
          int x = 0;
          int a =0;
+         int b = 0;
          int strategy = 2;
          //you write this...
         while(x< numGames){
@@ -23,10 +24,16 @@ public class SimMontyMain {
 
 
         }
+        x =0;
+        while(x<numGames){
+            b +=m.playGame(strategy -1);
+            x++;
+        }
+
         myWinTotal = a;
         //  }
          //stop here...
-        System.out.println("your win percetage" +(myWinTotal * 1.0)/numGames);
+        System.out.println("your win percetage for change:" +(myWinTotal * 1.0)/numGames +" " +"your win percentage for stay:" + (b * 1.0)/numGames);
     }
     
     
