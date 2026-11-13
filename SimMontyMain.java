@@ -13,12 +13,19 @@ public class SimMontyMain {
          SimMonty m = new SimMonty();
          int countRuns = 0;
          myWinTotal = 0;
+         int x = 0;
+         int a =0;
          //you write this...
-        //  while(){
-             
+        while(x< numGames){
+            a += m.playGame();
+            x ++;
+
+
+        }
+        myWinTotal = a;
         //  }
          //stop here...
-         System.out.println((myWinTotal * 1.0)/numGames);
+        System.out.println("your win percetage" +(myWinTotal * 1.0)/numGames);
     }
     
     
